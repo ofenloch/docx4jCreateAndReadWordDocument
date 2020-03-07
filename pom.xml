@@ -5,7 +5,7 @@
 
   <groupId>de.ofenloch.docx4j.examples</groupId>
   <artifactId>docx4jCreateWordDocument</artifactId>
-  <version>0.1-SNAPSHOT</version>
+  <version>0.1</version>
 
   <name>docx4jCreateWordDocument</name>
   <!-- FIXME change it to the project's website -->
