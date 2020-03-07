@@ -5,7 +5,7 @@
 
   <appender name="MyDailyRollingFileAppender" class="org.apache.log4j.DailyRollingFileAppender">
     <param name="datePattern" value="'.'yyyy-MM-dd_HH-mm" />
-    <param name="file" value="AppDailyRolling.log" />
+    <param name="file" value="./logs/AppDailyRolling.log" />
     <param name="Append" value="true" />
     <layout class="org.apache.log4j.PatternLayout">
       <param name="ConversionPattern" value="%d{ISO8601} %-5p [%t] %c: %m%n" />
@@ -13,7 +13,7 @@
   </appender>
 
   <appender name="MyRollingFileAppender" class="org.apache.log4j.RollingFileAppender">
-    <param name="file" value="AppRolling.log" />
+    <param name="file" value="./logs/AppRolling.log" />
     <param name="Append" value="true" />
     <layout class="org.apache.log4j.PatternLayout">
       <param name="ConversionPattern" value="%d{ISO8601} %-5p [%t] %c: %m%n" />
