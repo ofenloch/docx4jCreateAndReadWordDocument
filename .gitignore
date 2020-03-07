@@ -1,7 +1,10 @@
 target/
+.settings/
+.vscode/
 .classpath
 .factorypath
 .project
 *.swp
 *.log
+*.docx
 
