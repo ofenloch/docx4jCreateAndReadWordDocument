@@ -13,6 +13,9 @@ import java.util.Map.Entry;
 
 import javax.xml.bind.JAXBException;
 
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
+
 import org.docx4j.XmlUtils;
 import org.docx4j.fonts.PhysicalFont;
 import org.docx4j.fonts.PhysicalFonts;
@@ -24,6 +27,8 @@ import org.docx4j.openpackaging.parts.WordprocessingML.MainDocumentPart;
  * class for generating a simple Word document
  */
 public class createWordDocument {
+
+    protected static final Logger log = LogManager.getLogger(createWordDocument.class.getName());
 
     public static WordprocessingMLPackage createSampleWordDocument() throws InvalidFormatException {
         WordprocessingMLPackage wordMLPackage = WordprocessingMLPackage.createPackage();
@@ -57,9 +62,9 @@ public class createWordDocument {
                 String fontName = (String) pairs.getKey();
                 PhysicalFont pf = (PhysicalFont) pairs.getValue();
 
-                System.out.print("Adding paragraph for font \"" + fontName + "\" ...");
+                log.debug("Adding paragraph for font \"" + fontName + "\" ...");
                 addObject(wordDocumentPart, sampleText, fontName);
-                System.out.println("  ... done.");
+                log.debug("  ... done.");
 
                 // bold, italic etc
                 PhysicalFont pfVariation = PhysicalFonts.getBoldForm(pf);
