@@ -32,6 +32,7 @@ public class App {
         try {
             WordprocessingMLPackage wmlp = createWordDocument.createSampleWordDocument();
             wmlp.save(new File(fileName));
+            System.out.println(readWordFile.extractText(wmlp));
         } catch (InvalidFormatException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
