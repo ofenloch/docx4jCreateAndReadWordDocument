@@ -4,10 +4,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>de.ofenloch.docx4j.examples</groupId>
-  <artifactId>docx4jCreateWordDocument</artifactId>
+  <artifactId>docx4jCreateAndReadWordDocument</artifactId>
   <version>0.1</version>
 
-  <name>docx4jCreateWordDocument</name>
+  <name>docx4jCreateAndReadWordDocument</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
